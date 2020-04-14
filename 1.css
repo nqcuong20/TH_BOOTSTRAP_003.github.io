@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* FONT  */
+@font-face{
+    src:url("font text/Lato2OFL/Lato-Italic.ttf");
+    font-family: Lato_italic;
+}
+@font-face{
+    src:url("font text/Lato2OFL/Lato-Bold.ttf");
+    font-family: Lato_bold;
+}
+@font-face{
+    src:url("font text/Lato2OFL/Lato-Light.ttf");
+    font-family: Lato_light;
+}
+@font-face{
+    src:url("font text/Lato2OFL/Lato-Regular.ttf");
+    font-family: Lato_regular;
+}
+
+/* Biến */
+:root {
+    --font1: 'Lato', sans-serif;
+}
+
+/* BEGIN TOP--HEADER */
+
+.top--header{
+    border-top: 5px solid #0787d4;
+    background-color: #21c2f8;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    
+}
+.icon--header i {
+    color: white;
+    padding: 13px 8px 0px;
+    
+}
+.button--header .btn.btn-outline-light, .button--header .btn.btn-light{
+    font-family: Lato_bold;
+    font-size: 14px;
+    line-height: 19px;
+    display: inline-block;
+    padding-top: 8px 13px;
+    border-radius: 2px ;
+    margin-top: 0px;
+    margin-bottom: 10px ;
+    transition: 0.4s;
+    
+   
+}
+.button--header .btn.btn-outline-light:hover ,.button--header .btn.btn-light{
+    color: #a1b1bc;
+}
+.button--padd{
+    padding-right: 0px !important;
+}
+
+/* END */
+
+
+
+
+/* Begin NAV */
+nav.navbar.navbar-expand-sm.navbar-light.bg-light.bg--nav {
+    padding: 0px;
+}
+.bg--nav{
+    background-color: #ffffff !important;
+}
+
+
+.list--nav li.nav-item a.nav-link{
+    font-family: var(--font1);
+    font-size: 14px;
+    
+    padding: 40px 20px 45px 20px ;
+    border-top: 6px solid transparent;
+}
+.list--nav li.nav-item.active  a.nav-link {
+	color:#1abc9c;
+	border-color:#1abc9c;
+}
+.icon--nav {
+    font-size: 23px;
+    padding: 6px 6px 10px 9px;
+    color: #dce2e6;
+    margin-top: 37px;
+}
+
+/* END NAV */
+
+
+/* BEGIN SLIDE */
+#carouselId{
+    height: 600px;
+    overflow: hidden;
+
+}
+#carouselId .carousel-item{
+    height: 600px;
+}
+.carousel-caption.d-none.d-md-block {
+    top: 35%;
+    text-align: left;
+    
+}
+#carouselId h5{
+    font-size: 22px;
+    /* line-height: 50px; */
+    font-family: Lato_light;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+#carouselId h3{
+    font-size: 50px;
+    line-height: 50px;
+    font-family: Lato_light;
+    font-weight: 600;
+}
+.list--slide{
+    font-family: Lato_light;
+    font-size: 18px;
+    line-height: 35px;
+}
+.button--slide .carousel-control-prev.icon--slide , .carousel-control-next.icon--slide{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    top: 50%;
+    margin: 0px 5%;
+    margin-top: -25px;
+}
+
+/* END SLIDE  */
+
+
+/* INTRODUCE */
+.Introduce h1{
+    font-size: 36px;
+    line-height: 50px;
+    color: #2c3e50;
+    font-family: Lato_light;
+}
+.Introduce h4{
+    font-family: Lato_bold;
+    font-size: 15px;
+    line-height: 24px;
+    color: #2c3e50;
+
+}
+.Introduce p{
+    font-family: Lato_regular;
+    font-size: 14px;
+    color:#a1b1bc ;
+    line-height: 24px ;
+}
+
+h5.mb-0.title--collap a {
+    font-size: 15px;
+    font-family: Lato_bold;
+    line-height: 24px;
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 15px 19px;
+}
+div.card-header{
+    background-color: white !important;
+}
+
+.card-body .col-sm-9 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #a1b1bc;
+    font-family: Lato_regular;
+}
+.card-body {
+    padding: 17px;
+}
+.card{
+   margin-bottom: 5px;
+}
+
+
+@media (max-width: 576px){
+    *{}
+    nav.navbar.navbar-expand-sm.navbar-light.bg-light.bg--nav {
+        text-align: center;
+        background-color: #def7ff !important;
+    }
+    li:hover.nav-item {
+        background-color: white;
+    }
+    /* END NAV RESPONSIVE */
+}
+
